@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      perdiste_pinguino_0: -2430190284935154484
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

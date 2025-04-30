@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: fe422f1d697107742964af51148608f4
+guid: ccc7890c12e5c1f41a12dc8c83a446dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6152197896932717785
-    second: perdiste_corazon_0
+      213: 7840214590675720251
+    second: Frame 1 (6)_0
+  - first:
+      213: -8534441824909344543
+    second: Frame 1 (6)_1
+  - first:
+      213: -4021336792315543674
+    second: Frame 1 (6)_2
+  - first:
+      213: -7560498497193635346
+    second: Frame 1 (6)_3
+  - first:
+      213: 8045057506056311914
+    second: Frame 1 (6)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,56 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: perdiste_corazon_0
+      name: Frame 1 (6)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 585
-        height: 388
+        x: 86
+        y: 132
+        width: 87
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d4749a346ff06550800000000000000
-      internalID: 6152197896932717785
+      spriteID: b389f0881a90ecc60800000000000000
+      internalID: 7840214590675720251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame 1 (6)_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 134
+        width: 90
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0ca0ea0629f8980800000000000000
+      internalID: -8534441824909344543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame 1 (6)_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 133
+        width: 129
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fb2db4e775138c0800000000000000
+      internalID: -4021336792315543674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame 1 (6)_3
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 134
+        width: 90
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee116ed8ca6b31790800000000000000
+      internalID: -7560498497193635346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame 1 (6)_4
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 132
+        width: 89
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64931e5d29c5af60800000000000000
+      internalID: 8045057506056311914
       vertices: []
       indices: 
       edges: []
@@ -173,8 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      perdiste_corazon_0: 6152197896932717785
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ganaste_corazon_0: 7646537864984077670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

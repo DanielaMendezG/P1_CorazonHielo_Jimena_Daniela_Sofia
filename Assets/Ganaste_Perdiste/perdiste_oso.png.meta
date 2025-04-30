@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      perdiste_oso_0: -1995579127625596511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

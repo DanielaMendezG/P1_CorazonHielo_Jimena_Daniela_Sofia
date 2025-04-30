@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ganaste_pinguino_0: 4590522077502615481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
