@@ -44,5 +44,8 @@ TagManager:
   - name: Fondo
     uniqueID: 367828311
     locked: 0
+  - name: Juego
+    uniqueID: 2528137455
+    locked: 0
   m_RenderingLayers:
   - Default
