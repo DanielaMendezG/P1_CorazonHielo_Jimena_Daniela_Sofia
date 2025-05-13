@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: ac37c2afb710e4c4481fa117b37fe7dc
+guid: a958a71ca2aa6c04c8e116700d3caecb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3185884859051786180
-    second: Frame 21_0
-  - first:
-      213: -3204440063637917301
-    second: Frame 21_1
-  - first:
-      213: 6650898530571577426
-    second: Frame 21_2
-  - first:
-      213: 5775915174288866391
-    second: Frame 21_3
+      213: -7360750955383671568
+    second: ChatGPT Image 12 may 2025, 17_39_19_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,19 +84,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -120,6 +98,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -161,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame 21_0
+      name: ChatGPT Image 12 may 2025, 17_39_19_0
       rect:
         serializedVersion: 2
-        x: 284
-        y: 454
-        width: 476
-        height: 429
+        x: 202
+        y: 88
+        width: 820
+        height: 813
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,74 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c304ce8a99679c3d0800000000000000
-      internalID: -3185884859051786180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frame 21_1
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 456
-        width: 476
-        height: 426
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b81f4de6dba8783d0800000000000000
-      internalID: -3204440063637917301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frame 21_2
-      rect:
-        serializedVersion: 2
-        x: 1588
-        y: 447
-        width: 476
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 258e2efb9fcbc4c50800000000000000
-      internalID: 6650898530571577426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frame 21_3
-      rect:
-        serializedVersion: 2
-        x: 2165
-        y: 459
-        width: 476
-        height: 419
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75cb648bf3c282050800000000000000
-      internalID: 5775915174288866391
+      spriteID: 0f43d38410c59d990800000000000000
+      internalID: -7360750955383671568
       vertices: []
       indices: 
       edges: []
@@ -261,11 +186,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Frame 21_0: -3185884859051786180
-      Frame 21_1: -3204440063637917301
-      Frame 21_2: 6650898530571577426
-      Frame 21_3: 5775915174288866391
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

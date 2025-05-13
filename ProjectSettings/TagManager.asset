@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Amber
+  - EnemyBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -11,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - arriba
   - 
   - 
   - 
@@ -40,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bola de nieve
+    uniqueID: 4011864509
     locked: 0
   - name: Fondo
     uniqueID: 367828311
