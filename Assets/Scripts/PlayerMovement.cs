@@ -18,15 +18,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Movimiento lateral
+        
         moveX = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
 
-        // Animación caminar
+        
         animator.SetBool("IsWalking", moveX != 0);
         animator.SetFloat("MoveX", moveX);
 
-        // Disparo hacia arriba (flecha ↑)
+       
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             animator.SetTrigger("IsShooting");
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Boladefuego == null || puntodedisparoarriba == null)
         {
-            Debug.LogWarning("❌ Prefab o punto de disparo arriba no asignado.");
+            Debug.LogWarning("Prefab o punto de disparo arriba no asignado.");
             return;
         }
 
@@ -50,6 +50,6 @@ public class PlayerController : MonoBehaviour
             bulletRb.linearVelocity = Vector2.up * 10f;
         }
 
-        Debug.Log("🔥 Amber disparó fuego hacia ARRIBA");
+        Debug.Log("Amber disparó fuego hacia ARRIBA");
     }
 }

@@ -8,6 +8,7 @@ public class Snowball : MonoBehaviour
 
     private AudioSource audioSource;
     private Rigidbody2D rb;
+    private bool yaChoco = false;
 
     void Start()
     {
@@ -20,8 +21,18 @@ public class Snowball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (yaChoco || PlayerLifes.juegoTerminado) return; // ✅ Protección anticipada
+
         if (other.CompareTag("Amber"))
         {
+            if (PlayerLifes.juegoTerminado)  // ✅ Doble seguro por si el trigger ya estaba activo
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            yaChoco = true;
+
             PlayerLifes jugador = other.GetComponent<PlayerLifes>();
             if (jugador != null)
             {
@@ -31,9 +42,15 @@ public class Snowball : MonoBehaviour
             if (nieve != null && audioSource != null)
             {
                 audioSource.PlayOneShot(nieve);
+                GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<Collider2D>().enabled = false;
+                rb.linearVelocity = Vector2.zero;
+                Destroy(gameObject, nieve.length);
             }
-
-            Destroy(gameObject);
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         else if (!other.CompareTag("Enemy"))
         {

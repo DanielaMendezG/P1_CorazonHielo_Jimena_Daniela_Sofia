@@ -1,14 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
-    public GameObject[] enemigos; // Asigna Pinguino1, Pinguino2 y Pinguino3 desde el Inspector
+    public GameObject[] enemigos;
+
+    private bool nivelGanado = false; 
 
     void Update()
     {
-        if (TodosMuertos())
+        if (!nivelGanado && TodosMuertos())
         {
             StartCoroutine(TransicionGanar());
         }
@@ -25,7 +27,17 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator TransicionGanar()
     {
+        PlayerLifes.juegoTerminado = true;
+
+     
+        GameObject[] balasEnemigas = GameObject.FindGameObjectsWithTag("EnemyBullet");
+        foreach (GameObject bala in balasEnemigas)
+        {
+            Destroy(bala);
+        }
+
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Oso N2"); 
+        SceneManager.LoadScene("Win N1");
     }
+
 }
