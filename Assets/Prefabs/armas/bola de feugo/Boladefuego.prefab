@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7440441777266992911}
   - component: {fileID: 2703690529075220751}
   - component: {fileID: -5467022060315119569}
+  - component: {fileID: -8904218948502280076}
   m_Layer: 0
   m_Name: Boladefuego
   m_TagString: Untagged
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -283102787
-  m_SortingLayer: 1
+  m_SortingLayerID: -1766829841
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -7360750955383671568, guid: 2084ff2a4b4e4e946bc71f585b231ba6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -276,3 +277,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8904218948502280076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236137069854072564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894a22a9fd07d21418fcb0af447ec5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
