@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class PlayerLifeReyN4 : MonoBehaviour
 {
     public int vidas = 1;
@@ -13,7 +12,6 @@ public class PlayerLifeReyN4 : MonoBehaviour
 
     void Start()
     {
-
         string escenaActual = SceneManager.GetActiveScene().name;
         if (escenaActual == "Win N4" || escenaActual == "Lose N4")
         {
@@ -21,6 +19,7 @@ public class PlayerLifeReyN4 : MonoBehaviour
             return;
         }
     }
+
     public void RecibirDanio()
     {
         if (yaMurio || juegoTerminado) return;
@@ -38,6 +37,7 @@ public class PlayerLifeReyN4 : MonoBehaviour
             SceneManager.LoadScene("Lose N4");
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (juegoTerminado || yaMurio) return;
@@ -47,12 +47,23 @@ public class PlayerLifeReyN4 : MonoBehaviour
             Destroy(other.gameObject);
             RecibirDanio();
         }
+        else if (other.CompareTag("VidaExtra"))
+        {
+            if (vidas < Vidas.Length)
+            {
+                Vidas[vidas].enabled = true;
+                vidas++;
+            }
+
+            Destroy(other.gameObject);
+        }
     }
+
     void Update()
     {
-
+        // Por ahora vacío
     }
 }
 
-  
-   
+
+
