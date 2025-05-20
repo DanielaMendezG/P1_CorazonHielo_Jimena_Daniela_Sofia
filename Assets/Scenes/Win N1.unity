@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   didPlayerWin: 1
-  sceneNameToLoadIfEnd: 
+  sceneNameToLoadIfEnd: oso N2
 --- !u!4 &322031207
 Transform:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   siguienteNivel: oso N2
-  tiempoAntesDeCambiar: 3
+  tiempoAntesDeCambiar: 2
 --- !u!1 &1064173363
 GameObject:
   m_ObjectHideFlags: 0

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   didPlayerWin: 0
-  sceneNameToLoadIfEnd: 
+  sceneNameToLoadIfEnd: oso N2
 --- !u!4 &142307804
 Transform:
   m_ObjectHideFlags: 0

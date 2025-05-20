@@ -8,7 +8,7 @@ public class SceneFlowManager : MonoBehaviour
 
     void Start()
     {
-        Invoke("DecideNextScene", 2f);
+        Invoke("DecideNextScene", 6f);
     }
 
     void DecideNextScene()

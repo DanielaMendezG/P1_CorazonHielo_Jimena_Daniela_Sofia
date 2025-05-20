@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   didPlayerWin: 0
-  sceneNameToLoadIfEnd: 
+  sceneNameToLoadIfEnd: pinguinos N1
 --- !u!4 &2106359152
 Transform:
   m_ObjectHideFlags: 0
