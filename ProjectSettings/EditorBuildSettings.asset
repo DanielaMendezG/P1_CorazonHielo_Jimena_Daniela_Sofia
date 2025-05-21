@@ -35,6 +35,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lose N3.unity
     guid: c63cb00539f105447a23c6591416c053
+  - enabled: 1
+    path: Assets/Scenes/rey N4.unity
+    guid: 1d4666539bcd54344b5d934c5db70529
+  - enabled: 1
+    path: Assets/Scenes/Win N4.unity
+    guid: 2749a5a9f2dca704687b0ad55e9df629
+  - enabled: 1
+    path: Assets/Scenes/Lose N4.unity
+    guid: 185e5c6bf2e6c594792d03097e7f8d1b
+  - enabled: 1
+    path: Assets/Scenes/escena final.unity
+    guid: 75e702f317923c548ae192e90d562f67
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

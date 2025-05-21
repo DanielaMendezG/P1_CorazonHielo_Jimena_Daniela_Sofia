@@ -1,16 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneFlowManager : MonoBehaviour
+
+public class SceneFlowManagerLoseN4 : MonoBehaviour
 {
     public bool didPlayerWin = true;
-    public string sceneNameToLoadIfEnd = "Inicio"; // Nombre de la escena de inicio
-
+    public string sceneNameToLoadIfEnd = "rey N4";
     void Start()
     {
-        Invoke("DecideNextScene", 2f);
+        Invoke("DecideNextScene", 3f);
     }
-
     void DecideNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -42,5 +41,10 @@ public class SceneFlowManager : MonoBehaviour
                 SceneManager.LoadScene(sceneNameToLoadIfEnd);
             }
         }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

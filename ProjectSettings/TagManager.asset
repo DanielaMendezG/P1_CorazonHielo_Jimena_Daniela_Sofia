@@ -8,6 +8,7 @@ TagManager:
   - EnemyBullet
   - Enemy
   - VidaExtra
+  - Hielo
   layers:
   - Default
   - TransparentFX
