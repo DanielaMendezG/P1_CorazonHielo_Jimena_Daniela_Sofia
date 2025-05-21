@@ -3,29 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class CambioDeNivelAlGanar : MonoBehaviour
 {
-    public string siguienteNivel = "oso N2"; 
-    public float tiempoAntesDeCambiar = 3f;  
+    public float tiempoAntesDeCambiar = 3f;
+    public string siguienteNivel = "rey N3";
 
-    void Start()
+    // Asegúrate de que este método exista y sea público
+    public void ActivarVictoria()
     {
-        
+        Debug.Log("¡Victoria activada!");
+
         PlayerLifes.juegoTerminado = true;
 
-       
-        GameObject amber = GameObject.FindWithTag("Amber");
-        if (amber != null)
-        {
-            amber.SetActive(false);
-        }
-
-        
         GameObject[] balas = GameObject.FindGameObjectsWithTag("EnemyBullet");
-        foreach (GameObject b in balas)
+        foreach (GameObject bala in balas)
         {
-            Destroy(b);
+            Destroy(bala);
         }
 
-        
         Invoke(nameof(CambiarEscena), tiempoAntesDeCambiar);
     }
 
