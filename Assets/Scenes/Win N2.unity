@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342654471}
   - component: {fileID: 1342654472}
+  - component: {fileID: 1342654473}
   m_Layer: 0
   m_Name: Scene Flow Manager
   m_TagString: Untagged
@@ -245,11 +246,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342654469}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc672369a8614246950fe49740ba69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1342654473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342654469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d3e93a17f8f7a4eb0b06ea8015b5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siguienteNivel: rey N3
+  tiempoAntesDeCambiar: 3
 --- !u!1 &2094938215
 GameObject:
   m_ObjectHideFlags: 0

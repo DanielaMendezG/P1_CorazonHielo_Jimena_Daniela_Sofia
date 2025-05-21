@@ -9,11 +9,11 @@ public class SceneFlowManager : MonoBehaviour
 
         if (escenaActual == "Win N2")
         {
-            Invoke("CargarNivelSiguiente", 3f);
+            Invoke(nameof(CargarNivelSiguiente), 3f);
         }
         else if (escenaActual == "Lose N2")
         {
-            Invoke("ReintentarNivel", 3f);
+            Invoke(nameof(RegresarNivelAnterior), 3f);
         }
     }
 
@@ -22,11 +22,12 @@ public class SceneFlowManager : MonoBehaviour
         SceneManager.LoadScene("rey N3");
     }
 
-    void ReintentarNivel()
+    void RegresarNivelAnterior()
     {
         SceneManager.LoadScene("pinguinos N1");
     }
 }
+
 
 
 

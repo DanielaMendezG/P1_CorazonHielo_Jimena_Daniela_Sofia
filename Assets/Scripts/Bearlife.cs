@@ -9,6 +9,8 @@ public class Bearlife : MonoBehaviour
 
     public void RecibirDanio()
     {
+        if (AmberLife_Oso.juegoTerminado) return; // Evita múltiples ejecuciones
+
         vida--;
         Debug.Log("Oso recibió daño. Vida restante: " + vida);
 
@@ -29,15 +31,8 @@ public class Bearlife : MonoBehaviour
 
         Destroy(gameObject);
 
-        yield return new WaitForSeconds(1f); // Espera antes de cambiar de escena
+        yield return new WaitForSeconds(1f); // Espera para que se vea la animación/muerte
 
         SceneManager.LoadScene("Win N2");
     }
 }
-
-
-
-
-
-
-
