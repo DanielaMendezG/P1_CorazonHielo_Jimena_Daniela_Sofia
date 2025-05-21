@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Bearlife : MonoBehaviour
 {
@@ -13,20 +14,30 @@ public class Bearlife : MonoBehaviour
 
         if (vida <= 0)
         {
-            Morir();
+            StartCoroutine(TransicionGanar());
         }
     }
 
-    void Morir()
+    IEnumerator TransicionGanar()
     {
+        AmberLife_Oso.juegoTerminado = true;
+
         if (efectoMuerte != null)
         {
             Instantiate(efectoMuerte, transform.position, Quaternion.identity);
         }
 
-        Destroy(gameObject); // elimina el oso
+        Destroy(gameObject);
 
-        // Cambia esto por la escena que corresponda al ganar
-        SceneManager.LoadScene("Win N1");
+        yield return new WaitForSeconds(1f); // Espera antes de cambiar de escena
+
+        SceneManager.LoadScene("Win N2");
     }
 }
+
+
+
+
+
+
+

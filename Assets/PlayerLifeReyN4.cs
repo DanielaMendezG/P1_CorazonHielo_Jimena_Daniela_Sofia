@@ -38,6 +38,15 @@ public class PlayerLifeReyN4 : MonoBehaviour
         }
     }
 
+    public void GanarVida()
+    {
+        if (vidas < Vidas.Length)
+        {
+            Vidas[vidas].enabled = true;
+            vidas++;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (juegoTerminado || yaMurio) return;
@@ -49,12 +58,7 @@ public class PlayerLifeReyN4 : MonoBehaviour
         }
         else if (other.CompareTag("VidaExtra"))
         {
-            if (vidas < Vidas.Length)
-            {
-                Vidas[vidas].enabled = true;
-                vidas++;
-            }
-
+            GanarVida();
             Destroy(other.gameObject);
         }
     }

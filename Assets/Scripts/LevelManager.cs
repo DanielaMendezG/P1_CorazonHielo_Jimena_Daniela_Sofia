@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject[] enemigos;
 
-    private bool nivelGanado = false; 
+    private bool nivelGanado = false;
 
     void Update()
     {
@@ -15,6 +15,8 @@ public class LevelManager : MonoBehaviour
             StartCoroutine(TransicionGanar());
         }
     }
+
+
 
     bool TodosMuertos()
     {

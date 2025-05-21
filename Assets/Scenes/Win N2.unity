@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1342654471}
-  - component: {fileID: 1342654470}
+  - component: {fileID: 1342654472}
   m_Layer: 0
   m_Name: Scene Flow Manager
   m_TagString: Untagged
@@ -223,20 +223,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1342654470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342654469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fc672369a8614246950fe49740ba69e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  didPlayerWin: 1
-  sceneNameToLoadIfEnd: rey N3
 --- !u!4 &1342654471
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +238,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342654472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342654469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc672369a8614246950fe49740ba69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094938215
 GameObject:
   m_ObjectHideFlags: 0

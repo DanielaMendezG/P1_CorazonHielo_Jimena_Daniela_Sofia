@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - VidaExtra
   - Hielo
+  - Fireball
+  - Crystal
   layers:
   - Default
   - TransparentFX

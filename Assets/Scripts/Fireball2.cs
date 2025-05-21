@@ -4,6 +4,7 @@ public class Fireball2 : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
+        // Solo daña si el objeto tiene el tag "Enemy"
         if (other.CompareTag("Enemy"))
         {
             Bearlife oso = other.GetComponent<Bearlife>();
@@ -12,7 +13,7 @@ public class Fireball2 : MonoBehaviour
                 oso.RecibirDanio();
             }
 
-            Destroy(gameObject); // destruye la bola de fuego al impactar
+            Destroy(gameObject); // Solo se destruye si golpea al enemigo
         }
     }
 }

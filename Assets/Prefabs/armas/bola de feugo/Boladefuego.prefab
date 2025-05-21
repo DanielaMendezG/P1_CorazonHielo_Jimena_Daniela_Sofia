@@ -14,10 +14,12 @@ GameObject:
   - component: {fileID: 7440441777266992911}
   - component: {fileID: 2703690529075220751}
   - component: {fileID: -5467022060315119569}
-  - component: {fileID: -8904218948502280076}
+  - component: {fileID: 1713591162484489471}
+  - component: {fileID: 3017918627712664689}
+  - component: {fileID: -1556832819832890326}
   m_Layer: 0
   m_Name: Boladefuego
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,7 +279,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-8904218948502280076
+--- !u!114 &1713591162484489471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,6 +288,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 2236137069854072564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 894a22a9fd07d21418fcb0af447ec5c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 550ac9632ed0cc24181b199f2e9259c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3017918627712664689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236137069854072564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11009de05583468459bd2c98a056bfbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1556832819832890326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236137069854072564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad201e7ac3c77a4f873f83c2899c88b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

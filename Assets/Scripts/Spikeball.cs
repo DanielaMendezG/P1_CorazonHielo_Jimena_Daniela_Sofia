@@ -21,19 +21,13 @@ public class Spikeball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (yaChoco || PlayerLifes.juegoTerminado) return;
+        if (yaChoco || AmberLife_Oso.juegoTerminado) return;
 
         if (other.CompareTag("Amber"))
         {
-            if (PlayerLifes.juegoTerminado)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
             yaChoco = true;
 
-            PlayerLifes jugador = other.GetComponent<PlayerLifes>();
+            AmberLife_Oso jugador = other.GetComponent<AmberLife_Oso>();
             if (jugador != null)
             {
                 jugador.RecibirDanio();
