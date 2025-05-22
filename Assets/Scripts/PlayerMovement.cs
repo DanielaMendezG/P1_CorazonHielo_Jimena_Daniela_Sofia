@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Amber encontrada");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         Debug.Log("PlayerController: Iniciado");
