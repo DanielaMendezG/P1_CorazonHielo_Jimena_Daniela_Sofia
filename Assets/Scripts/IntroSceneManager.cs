@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class IntroSceneManager : MonoBehaviour
 {
-    public string nombreNivelSiguiente = "Nivel 1"; 
+    public string nombreNivelSiguiente = "AnimacionInicio"; 
 
     void Update()
     {

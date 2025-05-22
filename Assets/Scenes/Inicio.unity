@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1437d8234af697940ba997bec9a87e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreNivelSiguiente: pinguinos N1
+  nombreNivelSiguiente: AnimacionInicio
 --- !u!1 &1589137504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1437d8234af697940ba997bec9a87e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreNivelSiguiente: pinguinos N1
+  nombreNivelSiguiente: AnimacionInicio
 --- !u!114 &1774456999
 MonoBehaviour:
   m_ObjectHideFlags: 0

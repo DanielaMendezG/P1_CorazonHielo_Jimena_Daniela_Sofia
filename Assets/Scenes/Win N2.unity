@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &535501360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535501362}
+  - component: {fileID: 535501361}
+  m_Layer: 0
+  m_Name: Ganar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &535501361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535501360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d3e93a17f8f7a4eb0b06ea8015b5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siguienteNivel: rey N3
+  tiempoAntesDeCambiar: 3
+--- !u!4 &535501362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535501360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6070465, y: -0.17677298, z: -4.0667806}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961208535
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +262,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1342654471}
   - component: {fileID: 1342654472}
-  - component: {fileID: 1342654473}
   m_Layer: 0
   m_Name: Scene Flow Manager
   m_TagString: Untagged
@@ -251,20 +296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc672369a8614246950fe49740ba69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1342654473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342654469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56d3e93a17f8f7a4eb0b06ea8015b5b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  siguienteNivel: rey N3
-  tiempoAntesDeCambiar: 3
 --- !u!1 &2094938215
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,3 +440,4 @@ SceneRoots:
   - {fileID: 2094938218}
   - {fileID: 961208537}
   - {fileID: 1342654471}
+  - {fileID: 535501362}

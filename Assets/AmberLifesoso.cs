@@ -8,26 +8,29 @@ public class AmberLife_Oso : MonoBehaviour
     public Image[] Vidas;
 
     private bool yaMurio = false;
-    private bool puedeSerDaniado = true;
-
     public static bool juegoTerminado = false;
+    private bool puedeRecibirDanio = true;
 
     void Start()
     {
-        juegoTerminado = false;
+        string escenaActual = SceneManager.GetActiveScene().name;
+        if (escenaActual == "Win N2" || escenaActual == "Lose N2")
+        {
+            this.enabled = false;
+            return;
+        }
     }
 
     public void RecibirDanio()
     {
-        if (yaMurio || juegoTerminado || !puedeSerDaniado) return;
+        if (yaMurio || juegoTerminado || !puedeRecibirDanio) return;
 
-        puedeSerDaniado = false;
-        Invoke("ActivarDano", 0.5f); // Protección temporal
+        puedeRecibirDanio = false;
+        Invoke("ReactivarDanio", 1f);
 
         vidas = Mathf.Clamp(vidas - 1, 0, Vidas.Length);
 
-        // Apagar ícono de vida correspondiente
-        if (vidas < Vidas.Length && Vidas[vidas] != null)
+        if (vidas < Vidas.Length && vidas >= 0)
         {
             Vidas[vidas].enabled = false;
         }
@@ -35,14 +38,13 @@ public class AmberLife_Oso : MonoBehaviour
         if (vidas <= 0)
         {
             yaMurio = true;
-            juegoTerminado = true;
-            SceneManager.LoadScene("Lose N2");
+            SceneManager.LoadScene("Lose N1");
         }
     }
 
-    private void ActivarDano()
+    void ReactivarDanio()
     {
-        puedeSerDaniado = true;
+        puedeRecibirDanio = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

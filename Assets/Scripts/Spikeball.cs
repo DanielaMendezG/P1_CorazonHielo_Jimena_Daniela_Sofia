@@ -27,10 +27,10 @@ public class Spikeball : MonoBehaviour
         {
             yaChoco = true;
 
-            AmberLife_Oso jugador = other.GetComponent<AmberLife_Oso>();
-            if (jugador != null)
+            AmberLife_Oso amber = other.GetComponent<AmberLife_Oso>();
+            if (amber != null)
             {
-                jugador.RecibirDanio();
+                amber.RecibirDanio();
             }
 
             if (sonidoPincho != null && audioSource != null)
@@ -45,10 +45,6 @@ public class Spikeball : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        }
-        else if (!other.CompareTag("Enemy"))
-        {
-            Destroy(gameObject);
         }
     }
 }
