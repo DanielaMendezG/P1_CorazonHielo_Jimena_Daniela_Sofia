@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: ff18f586ccfcdbd49921115f5ace028a
   - enabled: 1
+    path: Assets/Scenes/AnimacionInicio.unity
+    guid: 2a10d05d450b00f418210926f846224a
+  - enabled: 1
     path: Assets/Scenes/pinguinos N1.unity
     guid: c9b938d05d7344848abea7046411d4a6
   - enabled: 1
