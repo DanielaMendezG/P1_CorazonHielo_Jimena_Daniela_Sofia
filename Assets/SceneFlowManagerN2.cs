@@ -1,29 +1,26 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-
 public class SceneFlowManagerN2 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject[] enemigos;
 
-    private bool nivelGanado = false;
     void Start()
     {
-        AmberLife_Oso.juegoTerminado = false;
+        AmberLifesoso.juegoTerminado = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (AmberLife_Oso.juegoTerminado) return;
+        if (AmberLifesoso.juegoTerminado) return;
+
+        if (enemigos == null || enemigos.Length == 0) return; // ← AÑADIDO
 
         if (TodosMuertos())
         {
-            AmberLife_Oso.juegoTerminado = true;
-            Debug.Log("Todos los enemigos est�n muertos");
-            // Ya no cambiamos de escena aqu�, Bearlife lo hace.
+            AmberLifesoso.juegoTerminado = true;
+            Debug.Log("Todos los enemigos están muertos");
         }
     }
 
@@ -35,10 +32,10 @@ public class SceneFlowManagerN2 : MonoBehaviour
         }
         return true;
     }
+
     IEnumerator TransicionGanar()
     {
-        PlayerLifes.juegoTerminado = true;
-
+        AmberLifesoso.juegoTerminado = true;
 
         GameObject[] balasEnemigas = GameObject.FindGameObjectsWithTag("EnemyBullet");
         foreach (GameObject bala in balasEnemigas)

@@ -1,24 +1,31 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class SceneManagerAnimacionInicio : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public string nombreNivelSiguiente = "pinguinos N1";
+    public string nombreEscenaSiguiente = "Inicio";
+    public VideoPlayer videoPlayer;
+
     void Start()
     {
-        
+        if (videoPlayer == null)
+        {
+            videoPlayer = GetComponent<VideoPlayer>();
+        }
+
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached += OnVideoEnd;
+        }
+        else
+        {
+            Debug.LogError("No se encontró el componente VideoPlayer.");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnVideoEnd(VideoPlayer vp)
     {
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                SceneManager.LoadScene(nombreNivelSiguiente);
-            }
-        }
+        SceneManager.LoadScene(nombreEscenaSiguiente);
     }
 }

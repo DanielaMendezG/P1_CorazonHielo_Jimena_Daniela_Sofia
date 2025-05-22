@@ -14,23 +14,32 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        Debug.Log("PlayerController: Iniciado");
     }
 
     void Update()
     {
-        
+        Debug.Log("PlayerController: Update ejecutándose");
+
+        if (AmberLifesoso.juegoTerminado)
+        {
+            Debug.Log("Juego terminado, no se puede mover Amber");
+            return;
+        }
+
         moveX = Input.GetAxisRaw("Horizontal");
+        Debug.Log("Input Horizontal: " + moveX);
+
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
 
-        
         animator.SetBool("IsWalking", moveX != 0);
         animator.SetFloat("MoveX", moveX);
 
-       
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             animator.SetTrigger("IsShooting");
-            Invoke("DispararArriba", 0.2f);
+            Debug.Log("Amber disparó");
+            Invoke(nameof(DispararArriba), 0.2f);
         }
     }
 
@@ -38,7 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Boladefuego == null || puntodedisparoarriba == null)
         {
-            Debug.LogWarning("Prefab o punto de disparo arriba no asignado.");
+            Debug.LogWarning("Boladefuego o punto de disparo no asignado.");
             return;
         }
 
@@ -50,6 +59,6 @@ public class PlayerController : MonoBehaviour
             bulletRb.linearVelocity = Vector2.up * 10f;
         }
 
-        Debug.Log("Amber disparó fuego hacia ARRIBA");
+        Debug.Log("Disparo hacia arriba ejecutado");
     }
 }

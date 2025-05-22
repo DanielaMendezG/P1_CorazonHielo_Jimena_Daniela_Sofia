@@ -3,28 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneFlowManager : MonoBehaviour
 {
+    public string escenaReintento = "pinguinos N1";
+    public float tiempoEspera = 3f;
+
     void Start()
     {
-        string escenaActual = SceneManager.GetActiveScene().name;
-
-        if (escenaActual == "Win N2")
-        {
-            Invoke(nameof(CargarNivelSiguiente), 3f);
-        }
-        else if (escenaActual == "Lose N2")
-        {
-            Invoke(nameof(RegresarNivelAnterior), 3f);
-        }
+        Invoke(nameof(ReintentarNivel), tiempoEspera);
     }
 
-    void CargarNivelSiguiente()
+    void ReintentarNivel()
     {
-        SceneManager.LoadScene("rey N3");
-    }
-
-    void RegresarNivelAnterior()
-    {
-        SceneManager.LoadScene("pinguinos N1");
+        SceneManager.LoadScene(escenaReintento);
     }
 }
 

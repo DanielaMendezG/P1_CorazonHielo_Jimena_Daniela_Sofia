@@ -28,7 +28,7 @@ public class BearShooter : MonoBehaviour
         bordeIzquierdo = cam.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + 0.5f;
         bordeDerecho = cam.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - 0.5f;
 
-        InvokeRepeating("IntentarDisparar", 1f, tiempoEntreDisparos);
+        InvokeRepeating(nameof(IntentarDisparar), 1f, tiempoEntreDisparos);
     }
 
     void Update()
@@ -75,18 +75,17 @@ public class BearShooter : MonoBehaviour
 
         yield return new WaitForSeconds(0.4f);
 
-        if (spikeball != null && puntoDisparo != null)
+        if (spikeball && puntoDisparo)
         {
             GameObject bola = Instantiate(spikeball, puntoDisparo.position, Quaternion.identity);
             Rigidbody2D rbBola = bola.GetComponent<Rigidbody2D>();
-            if (rbBola != null)
+            if (rbBola)
             {
                 rbBola.linearVelocity = Vector2.down * 5f;
             }
         }
 
         yield return new WaitForSeconds(0.6f);
-
         estaDisparando = false;
     }
 
@@ -106,6 +105,7 @@ public class BearShooter : MonoBehaviour
         Destroy(gameObject);
 
         CambioDeNivelAlGanar cambio = FindFirstObjectByType<CambioDeNivelAlGanar>();
+
         if (cambio != null)
         {
             cambio.ActivarVictoria();

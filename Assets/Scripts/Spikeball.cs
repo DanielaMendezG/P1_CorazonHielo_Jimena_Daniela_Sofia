@@ -14,20 +14,20 @@ public class Spikeball : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
-
         rb.linearVelocity = Vector2.down * velocidad;
         Destroy(gameObject, tiempoDeVida);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (yaChoco || AmberLife_Oso.juegoTerminado) return;
+        if (yaChoco || AmberLifesoso.juegoTerminado) return;
 
         if (other.CompareTag("Amber"))
         {
             yaChoco = true;
+            Debug.Log("Spikeball impactó a Amber");
 
-            AmberLife_Oso amber = other.GetComponent<AmberLife_Oso>();
+            AmberLifesoso amber = other.GetComponent<AmberLifesoso>();
             if (amber != null)
             {
                 amber.RecibirDanio();

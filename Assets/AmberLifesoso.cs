@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class AmberLife_Oso : MonoBehaviour
+public class AmberLifesoso : MonoBehaviour
 {
     public int vidas = 2;
     public Image[] Vidas;
@@ -13,7 +13,11 @@ public class AmberLife_Oso : MonoBehaviour
 
     void Start()
     {
+        juegoTerminado = false;
+
         string escenaActual = SceneManager.GetActiveScene().name;
+        Debug.Log("Escena actual: " + escenaActual);
+
         if (escenaActual == "Win N2" || escenaActual == "Lose N2")
         {
             this.enabled = false;
@@ -38,7 +42,8 @@ public class AmberLife_Oso : MonoBehaviour
         if (vidas <= 0)
         {
             yaMurio = true;
-            SceneManager.LoadScene("Lose N1");
+            juegoTerminado = true;
+            SceneManager.LoadScene("Lose N2");
         }
     }
 
@@ -58,4 +63,3 @@ public class AmberLife_Oso : MonoBehaviour
         }
     }
 }
-
